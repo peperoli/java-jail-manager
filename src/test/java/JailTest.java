@@ -42,7 +42,7 @@ public class JailTest {
         jail.addPrisoner("B");
 
         int number =
-                jail.getPrisoners()[0].getNumber();
+                jail.getPrisoners().get(0).getNumber();
 
         jail.removePrisoner(number);
 

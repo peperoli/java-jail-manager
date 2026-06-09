@@ -1,17 +1,17 @@
 // Main.java
-
+import java.util.ArrayList;
 import java.util.Scanner;
 
-void main() {
+public class Main {
+    public static void main(String[] args) {
 
     Jail superSecureJail = new Jail(5);
 
-    Prisoner[] prisoners = {
-            new Prisoner("Oli"),
-            new Prisoner("Jasmine"),
-            new Prisoner("Oli")
-    };
-
+    ArrayList<Prisoner> prisoners = new ArrayList<Prisoner>();
+        prisoners.add(new Prisoner("Oli"));
+        prisoners.add(new Prisoner("Jasmine"));
+        prisoners.add(new Prisoner("Oli"));
+    
     superSecureJail.setPrisoners(prisoners);
 
     Scanner input = new Scanner(System.in);
@@ -50,4 +50,5 @@ void main() {
 
         superSecureJail.addPrisoner(name);
     }
+}
 }
