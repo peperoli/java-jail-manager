@@ -41,10 +41,7 @@ public class JailTest {
         jail.addPrisoner("A");
         jail.addPrisoner("B");
 
-        int number =
-                jail.getPrisoners().get(0).getNumber();
-
-        jail.removePrisoner(number);
+        jail.removePrisoner(1);
 
         assertEquals(
                 1,
