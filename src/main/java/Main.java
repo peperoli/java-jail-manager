@@ -50,5 +50,7 @@ public class Main {
 
         superSecureJail.addPrisoner(name);
     }
-}
+
+    input.close();
+    }
 }
